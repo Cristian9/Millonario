@@ -1,0 +1,300 @@
+#Copyright eLearning Brothers LLC 2012 All Rights Reserved
+[-----------General Game Information/Instructions--------------]
+#This file is where you add text to your game.
+#IMPORTANT: View tutorials and examples at http://elearningtemplates.com/video-tutorials/
+
+#You can use basic html tags to format text. (i.e. <b>, <i>, <a href="http://www.YourURL.com/" target="_blank">Your Text</a>, <font size="5" color="red">Your Text</font>)
+
+#Question Types
+#There are 3 question types to choose from on each question: T/F, multiple choice, and multiple answer:
+#  - T/F - Leave the "question type" as default. Then delete answer 3 and 4 and the question will automatically only display 2 buttons.
+#  - Multiple Choice (1 Respuesta correcta) - use the word "default" as the "question type".
+#  - Multiple Answer (multiple Respuesta correctas) - use the word "multiple" as the "question type".
+
+#If you want to "comment out" a line of code then use the pound sign in front of it.
+
+#Note for audio: .wav files are the most universally compatible with browsers and devices. (However IE only supports .mp3.)
+
+#Use the backslash symbol to do a line break "\" (remove the quotes) and continue text onto a second line.
+#NEVER end a section of text with a backslash. It will break things.
+
+
+[------------------Game Introduction Text----------------------]
+introduction_text=<h1>Juego del Millonario</h1>\La mecánica del juego es la siguiente, debes responder 10 preguntas correctamente para completar el juego.\\Cada pregunta tiene 4 posibles respuestas y dispones de 3 pistas que puedes usar cuando tengas dudas o falles una pregunta, pero ¡ojo! aunque puedes cometer 3 fallos a lo largo del juego si fallas 2 veces en una misma pregunta perderás.\\¡Animo y buena suerte!
+#introduction_audio=introduction.wav,introduction.ogg,introduction.mp3
+
+[------------------Game Conclusion Text------------------------]
+conclusion_text=<h1>Enhorabuena</h1>\
+Lo has conseguido! Has respondido correctamente a todas las preguntas.
+#conclusion_audio=conclusion.wav,conclusion.ogg,conclusion.mp3
+
+[--------------Game Conclusion Text For Lost Game--------------]
+conclusion_lost_text=<h1>Has perdido</h1> Lo sentimos, te animamos a que vuelvas a intentarlo.
+#conclusion_lost_audio=conclusion_lost.wav,conclusion_lost.ogg,conclusion_lost.mp3
+
+[-----------------------Game Buttons text----------------------]
+splash_page_button_continue_text=Continuar
+intro_page_button_continue_text=Empezar
+questions_button_continue_text=Continuar
+question_page_button_continue_text=Continuar
+question_page_button_confirm_text=Enviar
+result_page_button_replay_text=Jugar de nuevo
+
+[-----------------------Question Options-----------------------]
+#You can randomize the order in which questions are presented to the user.
+randomize_question_order=true
+#You can randomize the order in which answer buttons are presented to the user.
+randomize_answer_order=true
+
+#Use question_count to indicate how many questions should be presented in the game. Make sure you have question code/text for each question. 
+question_count=10
+#Uncomment questions_displayed_from_count to only pull a certain number of questions from the question_count. You can define how many questions will be pulled from the total number of questions present in the game.
+questions_displayed_from_count=10
+
+#You can use the timeout to control the amount of time in the countdown timer. To turn it off set the value to zero.
+timeout=60
+
+[-----------------------Question 1-----------------------]
+q1_text=Con el cambio se experimenta...
+
+#You can add images to the question by using an <img> tag. For example: <img src="questions/YourFile.jpg" align="left"/>
+#Copy your question image to the questions folder in your game file. You can also use left and right alignment.
+#Uncomment the next line to hide question box image that's behind the question text.
+#q1_removeBackground=true
+
+#See the notes at the top of this file for instructions on question types.
+q1_type=default
+
+#You can comment out answers to make them disappear. You can also add additional answers by copy/pasting answers and renumbering them.
+q1_answer_1=Sensación de pérdida de control.
+q1_answer_2=Bienestar inmediato por la adaptación.
+q1_answer_3=Felicidad por las nuevas condiciones.
+q1_answer_4=Riesgo medido.
+#Indicate which of the answers above is correct. If you have multiple Respuesta correctas then separate the numbers with a comma.(i.e. 1,4)
+q1_correct_answer=1
+
+#Text for the hint
+q1_hint_text=<b>Pista</b>\ Cierta sensación de pérdida de control.
+
+#Question 1 Feedback Information if question type is "default"
+q1_answer_1_feedback_text=¡CORRECTO!
+q1_answer_2_feedback_text=No es correcto, puedes utilizar una pista.
+q1_answer_3_feedback_text=No es correcto, puedes utilizar una pista.
+q1_answer_4_feedback_text=No es correcto, puedes utilizar una pista.
+
+#Question 1 Correct Feedback Information if question type is "multiple"
+q1_correct_feedback_text=<h1>Es correcto</h1> Texto informativo ...
+#Question 1 Incorrect Feedback Information if question type is "multiple"
+q1_incorrect_feedback_text=<h1>Es incorrecto</h1>Texto informativo...
+
+#Question 1 Audio
+#If you want to add question audio then use the next lines. Uncomment the line by removing the # sign, type the name of the audio file, and then copy the file to the "questions" folder in your game files.
+#q1_audio=audioq1.wav
+
+
+[-----------------------Question 2-----------------------]
+q2_text=El cambio debe considerarse...
+q2_type=default
+q2_answer_1=Un proceso.
+q2_answer_2=Un acontecimiento aislado. 
+q2_answer_3=Un pensamiento creciente.
+q2_answer_4=Una forma de ver el entorno.
+
+q2_correct_answer=1
+
+q2_hint_text=<b>Pista</b>\Proceso
+
+q2_answer_1_feedback_text=¡CORRECTO!
+q2_answer_2_feedback_text=No es correcto, puedes utilizar una pista.
+q2_answer_3_feedback_text=No es correcto, puedes utilizar una pista.
+q2_answer_4_feedback_text=No es correcto, puedes utilizar una pista.
+
+q2_correct_feedback_text=<h1>Es correcto</h1> Texto informativo ...
+q2_incorrect_feedback_text=<h1>Es incorrecto</h1>Texto informativo...
+
+#q2_audio=audio.wav
+#q2_removeBackground=true
+
+[-----------------------Question 3-----------------------]
+q3_text=No existe el cambio si no hay ...
+q3_type=default
+q3_answer_1=Una ruptura en las expectativas de las personas.
+q3_answer_2=Alicientes para tomar otras opciones.
+q3_answer_3=Una motivación para comenzar un proceso.
+q3_answer_4=Ninguna de las mencionadas es correcta.
+
+q3_correct_answer=1
+
+q3_hint_text=<b>Pista</b>\ ¡Rompe¡
+
+q3_answer_1_feedback_text=¡CORRECTO!
+q3_answer_2_feedback_text=No es correcto, puedes utilizar una pista.
+q3_answer_3_feedback_text=No es correcto, puedes utilizar una pista.
+q3_answer_4_feedback_text=No es correcto, puedes utilizar una pista.
+
+q3_correct_feedback_text=<h1>Es correcto</h1> Texto informativo ...
+q3_incorrect_feedback_text=<h1>Es incorrecto</h1>Texto informativo...
+
+#q3_audio=audio.wav
+#q3_removeBackground=true
+
+[-----------------------Question 4-----------------------]
+q4_text=Ideas que te ayudan al cambio  ...
+q4_type=default
+q4_answer_1=Todas son correctas.
+q4_answer_2=Gestionar las relaciones de influencia.
+q4_answer_3=Establecer cuál es el ámbito del cambio.
+q4_answer_4=Crear dinámica de cambio con actitudes y comportamientos.
+
+q4_correct_answer=1
+
+q4_hint_text=<b>Pista</b>\Todas ayudan
+
+q4_answer_1_feedback_text=¡CORRECTO!
+q4_answer_2_feedback_text=No es correcto, puedes utilizar una pista.
+q4_answer_3_feedback_text=No es correcto, puedes utilizar una pista.
+q4_answer_4_feedback_text=No es correcto, puedes utilizar una pista.
+
+q4_correct_feedback_text=<h1>Es correcto</h1> Texto informativo ...
+q4_incorrect_feedback_text=<h1>Es incorrecto</h1>Texto informativo...
+
+#q4_audio=audio.wav
+#q4_removeBackground=true
+
+[-----------------------Question 5-----------------------]
+q5_text=“ Mejorar siempre es cambiar; ser perfecto es cambiar a menudo ” ¿Quién dijo esta frase?
+q5_type=default
+q5_answer_1=W.S. Churchill.
+q5_answer_2=Groucho Marx.
+q5_answer_3=Se C. Darwin.
+q5_answer_4=Tom Peters.
+
+q5_correct_answer=1
+
+q5_hint_text=<b>Pista</b>\Churchill
+
+q5_answer_1_feedback_text=¡CORRECTO!
+q5_answer_2_feedback_text=No es correcto, puedes utilizar una pista.
+q5_answer_3_feedback_text=No es correcto, puedes utilizar una pista.
+q5_answer_4_feedback_text=No es correcto, puedes utilizar una pista.
+
+q5_correct_feedback_text=<h1>Es correcto</h1> Texto informativo ...
+q5_incorrect_feedback_text=<h1>Es incorrecto</h1>Texto informativo...
+
+#q5_audio=audio.wav
+#q5_removeBackground=true
+
+[-----------------------Question 6-----------------------]
+q6_text=¿Qué necesitamos para ser competentes ante los cambios?
+q6_type=default
+q6_answer_1=Todas son correctas.
+q6_answer_2=Compromiso.
+q6_answer_3=Responsabilidad.
+q6_answer_4=Flexibilidad.
+
+q6_correct_answer=1
+
+q6_hint_text=<b>Pista </b>\Todas
+
+q6_answer_1_feedback_text=¡CORRECTO!
+q6_answer_2_feedback_text=No es correcto, puedes utilizar una pista.
+q6_answer_3_feedback_text=No es correcto, puedes utilizar una pista.
+q6_answer_4_feedback_text=No es correcto, puedes utilizar una pista.
+
+q6_correct_feedback_text=<h1>Es correcto</h1> Texto informativo ...
+q6_incorrect_feedback_text=<h1>Es incorrecto</h1>Texto informativo...
+
+#q6_audio=audio.wav
+#q6_removeBackground=true
+
+[-----------------------Question 7-----------------------]
+q7_text=La anticipación a los cambios futuros es lo que cada vez diferencia más a...
+q7_type=default
+q7_answer_1=Las organizaciones excelentes del resto.
+q7_answer_2=Las personas con gran inteligencia.
+q7_answer_3=Las personas con gran personalidad.
+q7_answer_4=Las organizaciones del sector tecnológico.
+
+q7_correct_answer=1
+
+q7_hint_text=<b>Pista</b>\Organizaciones excelentes
+
+q7_answer_1_feedback_text=¡CORRECTO!
+q7_answer_2_feedback_text=No es correcto, puedes utilizar una pista.
+q7_answer_3_feedback_text=No es correcto, puedes utilizar una pista.
+q7_answer_4_feedback_text=No es correcto, puedes utilizar una pista.
+
+q7_correct_feedback_text=<h1>Es correcto</h1> Texto informativo ...
+q7_incorrect_feedback_text=<h1>Es incorrecto</h1>Texto informativo...
+
+#q7_audio=audio.wav
+#q7_removeBackground=true
+
+[-----------------------Question 8-----------------------]
+q8_text=Ser competente en cambio significa
+q8_type=default
+q8_answer_1=Todas son correctas.
+q8_answer_2=Entender y aceptar los cambios en la organización .
+q8_answer_3=Ser capaz de trabajar rápido en distintas situaciones.
+q8_answer_4=Adaptarse de manera ágil y constructiva a nuevas condiciones.
+
+q8_correct_answer=1
+
+q8_hint_text=<b>Pista</b>\Todas
+
+q8_answer_1_feedback_text=¡CORRECTO!
+q8_answer_2_feedback_text=No es correcto, puedes utilizar una pista.
+q8_answer_3_feedback_text=No es correcto, puedes utilizar una pista.
+q8_answer_4_feedback_text=No es correcto, puedes utilizar una pista.
+
+q8_correct_feedback_text=<h1>Es correcto</h1> Texto informativo ...
+q8_incorrect_feedback_text=<h1>Es incorrecto</h1>Texto informativo...
+
+#q8_audio=audio.wav
+#q8_removeBackground=true.
+
+[-----------------------Question 9-----------------------]
+q9_text=¿Cuál crees que es la principal causa por la que fracasa un proceso de cambio?
+q9_type=default
+q9_answer_1=Resistencia de los empleados.
+q9_answer_2=Mal liderazgo.
+q9_answer_3=Falta de habilidades.
+q9_answer_4=Fallos de comunicación.
+
+q9_correct_answer=1
+
+q9_hint_text=<b>Pista</b>\Resistencia de los empleados
+
+q9_answer_1_feedback_text=¡CORRECTO!
+q9_answer_2_feedback_text=No es correcto, puedes utilizar una pista.
+q9_answer_3_feedback_text=No es correcto, puedes utilizar una pista.
+q9_answer_4_feedback_text=No es correcto, puedes utilizar una pista.
+
+q9_correct_feedback_text=<h1>Es correcto</h1> Texto informativo ...
+q9_incorrect_feedback_text=<h1>Es incorrecto</h1>Texto informativo...
+
+#q9_audio=audio.wav
+#q9_removeBackground=true
+
+[-----------------------Question 10-----------------------]
+q10_text=¿Cuáles son las principales barreras ante el cambio? 
+q10_type=default
+q10_answer_1=Internas y Organizativas.
+q10_answer_2=Actitudinales y Procedimentales.
+q10_answer_3=Salir de la zona de confort y Temor a lo desconocido.
+q10_answer_4=Todas son correctas.
+
+q10_correct_answer=1
+
+q10_hint_text=<b>Pista</b>\Internas y Organizativas
+
+q10_answer_1_feedback_text=¡CORRECTO!
+q10_answer_2_feedback_text=No es correcto, puedes utilizar una pista.
+q10_answer_3_feedback_text=No es correcto, puedes utilizar una pista.
+q10_answer_4_feedback_text=No es correcto, puedes utilizar una pista.
+
+q10_correct_feedback_text=<h1>Es correcto</h1> Texto informativo ...
+q10_incorrect_feedback_text=<h1>Es incorrecto</h1>Texto informativo...
+
+#q10_audio=audio.wav
+#q10_removeBackground=true

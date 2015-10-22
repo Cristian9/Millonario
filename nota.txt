@@ -1,0 +1,3 @@
+añado funcion   en /core/scorm.js
+function SCOSetValue(valueKey, value) {
+
